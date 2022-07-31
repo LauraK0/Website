@@ -136,19 +136,18 @@ a{
   
   .main_nav{
     display: flex;
-    width: 50%;
-    float: right;
-    margin-right: 2%;
+    width: 100%;
     justify-content: space-between;
+    float: right;
     list-style: none;
-    font-size: 80%;
+    font-size: 75%;
   }
   .main_nav li:hover{
     transform: scale(1.1);
   }
   
   .main_nav li{
-    display: inline;
+    display: flex;
     color: #ffffff;
   }
   .main_nav li a{
@@ -199,11 +198,6 @@ a{
       transition: all 0.3s linear;
       cursor: pointer;
       display: block;
-    }
-    .logo_header{
-      width: 100%;
-      justify-content: space-between;
-      margin-right: 2%;
     }
 }
 /*end navigation elements*/
