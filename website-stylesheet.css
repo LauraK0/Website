@@ -101,45 +101,6 @@ body, html {
       min-height: 400px;
     }
   }
-
-/* navigation elements*/
-
-a{
-    text-decoration: none;
-  }
-  
-/* navigation bar */
- .nav-bar-icon {
-    height: 100px;
-    width: 100px;
-}
-
-  .nav-bar--menu {
-    display: flex;
-    gap: 1rem;
-    width: 100vw;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    padding:12px;
-    text-color: white;
-    background-color:#000;
-    letter-spacing: 5px;
-    text-align:left;
-    opacity:0.75;
-}
-
-.nav-bar-menu a {
-  color: white;
-  text-decoration: none;
-}
-.nav-bar-menu a:hover {
-  border-bottom: 2px solid white;
-}
-.nav-icon-mob {
-  display: none;
-}
-
-/* navigation bar */
   
   @media only screen and (max-width : 992px){
   
