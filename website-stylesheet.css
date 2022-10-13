@@ -1,23 +1,17 @@
+/* UTILITIES */
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
 }
 
-.button {
-    height: 100%;
-    color: white;
-    line-height: 1.8;
-}
-
-/* text design */
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
   height: 100%;
   color: #777;
   line-height: 1.8;
 }
-
 
 .header-text {
     font-size: 140%;
@@ -26,6 +20,20 @@ body, html {
     background-color:#000;
     letter-spacing: 10px;
     text-align:center;
+}
+
+a {
+ text-decoration: none;
+}
+
+li {
+ list-style: none;
+}
+
+.button {
+    height: 100%;
+    color: white;
+    line-height: 1.8;
 }
 
 /* NAVBAR STYLING STARTS */
