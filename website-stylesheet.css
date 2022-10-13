@@ -133,26 +133,24 @@ a{
     display: none;
   }
   
-  
-  .main_nav{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    float: right;
-    list-style: none;
-    font-size: 75%;
-  }
-  .main_nav li:hover{
-    transform: scale(1.1);
-  }
-  
-  .main_nav li{
-    display: flex;
-    color: #ffffff;
-  }
-  .main_nav li a{
-    color: #ffffff;
-  }
+/* navigation bar */
+  .nav-bar--menu {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.nav-bar--menu a {
+  color: white;
+  text-decoration: none;
+}
+.nav-bar--menu a:hover {
+  border-bottom: 2px solid white;
+}
+.nav-icon-mob {
+  display: none;
+}
+
+/* navigation bar */
   
   @media only screen and (max-width : 992px){
   
