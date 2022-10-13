@@ -109,6 +109,11 @@ a{
   }
   
 /* navigation bar */
+ .nav-bar-icon {
+    height: 100px;
+    width: 100px;
+}
+
   .nav-bar--menu {
     display: flex;
     gap: 1rem;
@@ -122,11 +127,12 @@ a{
     text-align:left;
     opacity:0.75;
 }
+
 .nav-bar-menu a {
   color: white;
   text-decoration: none;
 }
-.nav-bar--menu a:hover {
+.nav-bar-menu a:hover {
   border-bottom: 2px solid white;
 }
 .nav-icon-mob {
