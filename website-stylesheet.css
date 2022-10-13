@@ -107,39 +107,22 @@ body, html {
 a{
     text-decoration: none;
   }
-  .navbar{
+  
+/* navigation bar */
+  .nav-bar--menu {
     display: flex;
-    justify-content: space-between;
+    gap: 1rem;
     width: 100vw;
     padding-top: 2%;
     padding-bottom: 2%;
     padding:12px;
-    color: white;
+    text-color: white;
     background-color:#000;
     letter-spacing: 5px;
     text-align:left;
     opacity:0.75;
-  }
-  /* Toggle button */
-  
-  .navbar_toggle {
-    margin-left: 5%;
-    font-size: 30px;
-    color: #ffffff;
-    background: transparent;
-    border-color: transparent;
-    transition: all 0.3s linear;
-    cursor: pointer;
-    display: none;
-  }
-  
-/* navigation bar */
-  .nav-bar--menu {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
 }
-.nav-bar--menu a {
+.nav-bar-menu a {
   color: white;
   text-decoration: none;
 }
