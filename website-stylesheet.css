@@ -45,6 +45,8 @@ a{
     display: flex;
     justify-content: space-between;
     width: 100vw;
+    height: 4em;
+    font-size: 0.8em;
     padding-top: 2%;
     padding-bottom: 2%;
     padding:12px;
@@ -54,11 +56,15 @@ a{
     text-align:left;
     opacity:0.75;
   }
+  
+  #navbar-logo{
+    max-height: 3em;
+    max-width: 3em;
+  }
   /* Toggle button */
   
-  .navbar_toggle {
+  .navbar-mob {
     margin-left: 5%;
-    font-size: 30px;
     color: #ffffff;
     background: transparent;
     border-color: transparent;
@@ -68,24 +74,23 @@ a{
   }
   
   
-  .main_nav{
+  .main-nav{
     display: flex;
-    width: 50%;
+    width: 100%;
     float: right;
     margin-right: 2%;
     justify-content: space-between;
     list-style: none;
-    font-size: 80%;
   }
-  .main_nav li:hover{
+  .main-nav li:hover{
     transform: scale(1.1);
   }
   
-  .main_nav li{
+  .main-nav li{
     display: inline;
     color: #ffffff;
   }
-  .main_nav li a{
+  .main-nav li a{
     color: #ffffff;
   }
 
@@ -177,7 +182,7 @@ a{
     font-size: 20px;
   }
 
-  .main_nav{
+  .main-nav{
     display: none;
   }
 
@@ -190,18 +195,18 @@ a{
     justify-content: flex-start;
   }
 
-  .main_nav li{
+  .main-nav li{
     width: 100%;
     height: 50px;
-    font-size: 25px;
     justify-content: center;
     text-align: center;
     padding: 0%;
   }
-  .navbar_toggle {
+  .navbar-mob {
     margin-left: 5%;
     margin-right: 5%;
-    font-size: 30px;
+    font-size: 1.4em;
+    height: 4em;
     color: #ffffff;
     background: transparent;
     border-color: transparent;
@@ -209,7 +214,7 @@ a{
     cursor: pointer;
     display: block;
   }
-  .logo_header{
+  .logo-header{
     width: 100%;
     justify-content: space-between;
     margin-right: 2%;
