@@ -44,6 +44,9 @@ a{
   .navbar{
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100vw;
     height: 4em;
     font-size: 0.8em;
@@ -54,12 +57,15 @@ a{
     background-color:#000;
     letter-spacing: 5px;
     text-align:left;
-    opacity:0.75;
+    opacity:1;
   }
-  
+
   #navbar-logo{
-    max-height: 3em;
-    max-width: 3em;
+    display: flex;
+    max-height: 5em;
+    max-width: 5em;
+    float: left;
+    opacity: 100%;
   }
   /* Toggle button */
   
@@ -73,24 +79,23 @@ a{
     display: none;
   }
   
-  
-  .main-nav{
+  .navbar-links{
     display: flex;
-    width: 100%;
+    width: 80%;
     float: right;
     margin-right: 2%;
     justify-content: space-between;
     list-style: none;
   }
-  .main-nav li:hover{
+  .navbar-links li:hover{
     transform: scale(1.1);
   }
   
-  .main-nav li{
+  .navbar-links li{
     display: inline;
     color: #ffffff;
   }
-  .main-nav li a{
+  .navbar-links li a{
     color: #ffffff;
   }
 
@@ -107,6 +112,7 @@ a{
 
 .display-container{
     position:relative;
+    height: 100vh;
 }
 
 .black-box,.hover-black-box:hover {
@@ -116,9 +122,9 @@ a{
 
 .display-middle{
     position:absolute;
-    top:50%;left:50%;
-    transform:translate(-50%,-50%);
-    -ms-transform:translate(-50%,-50%)
+    top:50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .center-element{
@@ -182,7 +188,7 @@ a{
     font-size: 20px;
   }
 
-  .main-nav{
+  .navbar-links{
     display: none;
   }
 
@@ -195,7 +201,7 @@ a{
     justify-content: flex-start;
   }
 
-  .main-nav li{
+  .navbar-links li{
     width: 100%;
     height: 50px;
     justify-content: center;
@@ -213,11 +219,6 @@ a{
     transition: all 0.3s linear;
     cursor: pointer;
     display: block;
-  }
-  .logo-header{
-    width: 100%;
-    justify-content: space-between;
-    margin-right: 2%;
   }
 }
 /*end navigation elements*/
