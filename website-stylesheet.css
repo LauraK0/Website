@@ -22,6 +22,9 @@ body, html {
     text-align:center;
 }
 
+h3{
+  padding: 2em;
+}
 a {
  text-decoration: none;
 }
@@ -57,7 +60,7 @@ a{
     background-color:#000;
     letter-spacing: 5px;
     text-align:left;
-    opacity:1;
+    opacity:0.75;
   }
 
   #navbar-logo{
@@ -104,9 +107,10 @@ a{
 .content-container{
     margin-left:auto;
     margin-right:auto;
-    max-width:980px;
-    max-width:1140px;
-    padding:0.01em 16px;
+    align-content: center;
+    text-align: center;
+    max-width:800px;
+    padding: 64px;
 }
 
 
@@ -127,9 +131,6 @@ a{
     margin-right: auto;
 }
 
-.center-element{
-    text-align: center;
-}
 /* padding options */
 .padding-8{padding:8px;}
 .padding-12{padding:12px 24px!important}
@@ -151,7 +152,6 @@ a{
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
 /* First image (Full height) */
@@ -254,7 +254,7 @@ a{
 }
 
 .gallery-item img:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 /*button*/
