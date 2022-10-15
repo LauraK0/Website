@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
 /* UTILITIES */
 
 * {
@@ -69,6 +71,7 @@ a{
     max-width: 5em;
     float: left;
     opacity: 100%;
+    font-family: 'Monoton', cursive;
   }
   /* Toggle button */
   
