@@ -15,6 +15,8 @@
  padding: 0;
  box-sizing: border-box;
  font-family: "Lato", sans-serif;
+ justify-content: center;
+ text-align:center;
 }
 body, html {
   height: 100%;
@@ -27,11 +29,16 @@ h1 {
   color: white;
   background-color:var(--dark-blue);
   letter-spacing: 10px;
-  text-align:center;
 }
 h3{
 padding: 2em;
 }
+.content-container{
+  max-width:75%;
+}
+.background-theme{
+  background-color:var(--dark-blue);
+  }
 a {
  text-decoration: none;
 }
