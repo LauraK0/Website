@@ -52,58 +52,59 @@ li {
 a{
     text-decoration: none;
   }
-  .navbar{
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 4em;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    padding:12px;
-    color: white;
-    background-color: var(--dark-blue);
-    letter-spacing: 5px;
-    text-align:left;
-  }
-  #navbar-logo{
-    display: flex;
-    max-height: 5em;
-    max-width: 5em;
-    float: left;
-    opacity: 100%;
-    background-color: var(--cream);
-  }
-  /* Toggle button */
-  .navbar-mob {
-    margin-left: 5%;
-    color: #ffffff;
-    background: transparent;
-    border-color: transparent;
-    transition: all 0.3s linear;
-    cursor: pointer;
-    display: none;
-  }
-  .navbar-links{
-    display: flex;
-    width: 80%;
-    float: right;
-    margin-right: 2%;
-    justify-content: space-around;
-  }
-  .navbar-links li:hover{
-    transform: scale(1.1);
-  }
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 4em;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding:12px;
+  color: white;
+  background-color: var(--dark-blue);
+  letter-spacing: 5px;
+  text-align:left;
+}
+#navbar-logo{
+  display: flex;
+  max-height: 5em;
+  width: 7em;
+  float: left;
+  opacity: 100%;
+  color: white;
+  background-color: var(--cream);
+}
+/* Toggle button */
+.navbar-mob {
+  margin-left: 5%;
+  color: #ffffff;
+  background: transparent;
+  border-color: transparent;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  display: none;
+}
+.navbar-links{
+  display: flex;
+  width: 80%;
+  float: right;
+  margin-right: 2%;
+  justify-content: space-around;
+}
+.navbar-links li:hover{
+  transform: scale(1.1);
+}
 
-  .navbar-links li{
-    display: inline;
-    color: #ffffff;
-  }
-  .navbar-links li a{
-    color: #ffffff;
-  }
+.navbar-links li{
+  display: inline;
+  color: #ffffff;
+}
+.navbar-links li a{
+  color: #ffffff;
+}
 /*end navigation elements*/
 .header-image {
   height: 100vh;
