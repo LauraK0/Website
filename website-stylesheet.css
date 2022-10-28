@@ -107,7 +107,7 @@ a{
 }
 /*end navigation elements*/
 .header-image {
-  height: 100vh;
+  width: 100vh;
   background: url("./images/final-thesis.jpg");
   background-size: cover;
   background-position: right;
@@ -119,7 +119,7 @@ a{
   gap: 30px;
 }
 .portfolio-image {
-  height: 100vh;
+  width: 100vh;
   background: url("./images/section.jpg");
   background-size: cover;
   background-position: right;
