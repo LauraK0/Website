@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="./website-stylesheet.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap">
+<link rel="icon" type="image/x-icon" href="./images/favicon.png">
 <script async src="https://kit.fontawesome.com/6cc05e1e8e.js" crossorigin="anonymous"></script>
 <style></style>
 </head>
@@ -13,51 +14,45 @@
 
   <!-- Navbar (sit on top) -->
 <header class="header">
-  <nav class="navbar">
-    <a href="#about" id="navbar-logo">LKD</a>
-    <div>
-      <button class="navbar-mob">
+  <nav class="navbar-container">
+    <a href="#about" class="navbar-logo"><img src="./images/favicon.png" alt="lk icon"/></a>
+    <!-- <div>
+       <button type="button" class="navbar-mob">
         <i class="fas fa-bars"></i>
-      </button>
-    </div>
-    <ul class="navbar-links">
+      </button> 
+    </div> -->
+    <ul class="navbar">
       <li>
-        <a href="https://laurak0.github.io/Tribute-Page/" class="nav_links">TRIBUTE PAGE</a>
+        <a href="https://laurak0.github.io/Tribute-Page/" class="navbar-link">home</a>
       </li>
       <li>
-        <a href="https://laurak0.github.io/Project-Gallery/" class="nav_links">PROJECT GALLERY</a>
+        <a href="https://laurak0.github.io/Project-Gallery/" class="navbar-link">about</a>
       </li>
       <li>
-        <a href="https://laurak0.github.io/Comment-Box/" class="nav_links">COMMENT BOX</a>
-      </li>
-      <li>
-        <a href="https://laurak0.github.io/Fruit-Basket/" class="nav_links">FRUIT SHOP</a>
-      </li>
-      <li>
-        <a href="https://laurak0.github.io/Feature/" class="nav_links">FEATURE</a>
+        <a href="https://laurak0.github.io/Project-Gallery/" class="navbar-link">cv</a>
       </li>
     </ul>
-
   </nav>
 </header>
    
-<!-- Section 1 - Hero Image -->
-<div class="header-image display-container" id="home">
-  <div class="display-middle" style="white-space:nowrap;">
-    <h1 class="animate-opacity">WEBSITE</h1>
+<!-- Section 1 - Home -->
+<section id="home">
+  <div class="container">
+    <h1>Hello</h1>
+    <p>Software developer with a background in architecture and design with knowledge of HTML, CSS & Javascript. I'm keenly interested in the  particular interest in the intersection of coding with design, and have been discovering more about UX/UI design.</p>
   </div>
-</div>
+</section>
 
 <!-- Section 2 - About Section -->
-<div class="main" id="about">
-  <h2>ABOUT ME</h2><br>
+<section class="main" id="about">
+  <div class="container">
+  <h1>ABOUT ME</h1>
   <h3><em>Who am I?</em></h3>
   <p>
     Currently I am an architect working in a studio in central London, a studio which focuses primarily on commercial architecture.
     Most recently I have been project lead on a commercial refurbishment and extension project in West Kensington. 
     Originally built as a Victorian furniture depository, the aim of the project was to refurbish the historically significant building to meet the demands of the modern office occupier, make significant upgrades to the environmental credentials of the building.
   </p>
-  <br>
   <h3><em>Why the career change?</em></h3>
   <p>
   Since beginning my architectural studies, my primary goal was to become a Project Architect and have been able to lead many projects over the previous few years. 
@@ -65,27 +60,26 @@
   For example, I created a script that automatically reordered and formatted the window type mark with the correct information when creating the Window Schedule, avoiding the need to manually renumber thousands of windows. 
   I began to realise that I enjoyed the process of creating these simple scripts more than I enjoyed creating buildings.
   </p>
-  <br>
+
   <p> I studied at the Glasgow School of Art and developed a keen interest in contextural and sustainable architecture and moved to London to pursue my career.
     I am also interested in art and design and keen to get out to exhibitions/ visit different parts of London in my spare time.
     I also enjoy sport and keeping active, playing in a local hockey team.
   </p>
-
 </div>
+</section>
 
 <!-- Section 3 - Portfolio Image -->
-<div class="portfolio-image display-container">
-  <div class="display-middle" style="white-space:nowrap;">
-    <h1 class="header-text animate-opacity">PORTFOLIO</h1>
+<section id="portfolio-hero">
+  <div class="container">
+    <h1>PORTFOLIO</h1>
   </div>
-</div>
+</section>
 
 <!-- Section 4 - Portfolio -->
-<div class="main" id="portfolio">
+<section id="portfolio">
   <h3>MY WORK</h3>
   <p >Here are some of examples of work I created at university.</p>
 
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
   <div class="gallery">
     <div class="gallery-item">
       <img src="./images/folio-front-page.jpg" style="width:100%" class="hover-opacity" alt="folio front page">
@@ -100,11 +94,11 @@
     </div>
 
   </div>
-</div>
+</section>
 
 
 <!-- Footer -->
-<footer class="background-theme">
+<footer>
   <a href="#home" class="button"><i class="fa fa-arrow-up"></i> To the top</a>
 </footer>
  
