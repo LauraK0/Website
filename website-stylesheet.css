@@ -71,35 +71,13 @@ header {
   padding: 4px 8px;
   color: white;
 }
-<<<<<<< Updated upstream
-/*end navigation elements*/
-.header-image {
-  width: 100vh;
-  background: url("./images/final-thesis.jpg");
-  background-size: cover;
-  background-position: right;
-  background-color: #222;
-  color: var(--white);
-  text-align: center;
-=======
 /*home container */
 #home {
   padding: 1rem 1rem;
   min-height: 100vh;
   display: flex;
->>>>>>> Stashed changes
   align-items: center;
 }
-<<<<<<< Updated upstream
-.portfolio-image {
-  width: 100vh;
-  background: url("./images/section.jpg");
-  background-size: cover;
-  background-position: right;
-  background-color: #222;
-  color: var(--white);
-  text-align: center;
-=======
 .container {
   position: relative;
   max-width: 600px;
@@ -107,7 +85,6 @@ header {
   margin: auto;
   display: flex;
   flex-direction: column;
->>>>>>> Stashed changes
   align-items: center;
   justify-content: center;
 }
