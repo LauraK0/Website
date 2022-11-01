@@ -124,17 +124,3 @@ header {
   border-radius: 0.4rem;
   transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-/*portfolio hero */
-#portfolio-hero {
-  padding: 1rem 1rem;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-}
-/*portfolio */
-#portfolio {
-  padding: 1rem 1rem;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-}
