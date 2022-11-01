@@ -8,13 +8,12 @@
 
   --text-size: 12px;
   --h1-size: 48px;
-  --h2-size: 20px;
+  --h2-size: 36px;
   --h3-size: 16px;
 }
 * {
  margin: 0;
  padding: 0;
- background-color: var(--background);
  box-sizing: border-box;
  font-family: "Lato", sans-serif;
  justify-content: center;
@@ -24,6 +23,7 @@
 body, html {
   height: 100%;
   line-height: 1.8;
+  background-color: var(--background);
 }
 h1 {
   font-size: var(--h1-size);
@@ -31,9 +31,12 @@ h1 {
 }
 h2{
   font-size: var(--h2-size);
+  margin-bottom: 2rem;
+  color: white;
 }
 h3{
   font-size: var(--h3-size);
+  margin: 0.5rem 2rem;
 }
 p {
   margin-bottom: 1em;
@@ -49,7 +52,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background: var(--background);
+  background: var(--colour-three);
   z-index: 100;
   border-bottom: solid white 0.1em;
 }
@@ -107,9 +110,7 @@ header {
 /*about me */
 #about {
   padding: 1rem 1rem;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
+  max-height: 100vh;
 }
 .about-me-container {
   display: grid;
@@ -117,12 +118,9 @@ header {
   gap: 2rem;
 }
 .about-me-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  text-align: justify;
   padding: 15px;
-  background: var(--container-color);
+  background-color: var(--colour-three);
   border-radius: 0.4rem;
   transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
 }
