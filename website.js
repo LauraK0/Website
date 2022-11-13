@@ -1,7 +1,7 @@
 const cont = document.getElementById("container");
 console.log(cont);
 let elsArr = [].slice.call(document.querySelectorAll('.el'));
-let closeBtnsArr = [].slice.call(document.querySelectorAll('.el__close-btn'));
+let closeBtnsArr = [].slice.call(document.querySelectorAll('.close-button'));
 
 setTimeout(function() {
   cont.classList.remove('s--inactive');
