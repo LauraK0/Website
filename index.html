@@ -23,13 +23,13 @@
     </div> -->
     <ul class="navbar">
       <li>
-        <a href="https://laurak0.github.io/Tribute-Page/" class="navbar-link">home</a>
+        <a href="#home" class="navbar-link">home</a>
       </li>
       <li>
-        <a href="https://laurak0.github.io/Project-Gallery/" class="navbar-link">about</a>
+        <a href="#about" class="navbar-link">about</a>
       </li>
       <li>
-        <a href="https://laurak0.github.io/Project-Gallery/" class="navbar-link">cv</a>
+        <a href="#portfolio" class="navbar-link">porfolio</a>
       </li>
     </ul>
   </nav>
@@ -37,21 +37,21 @@
    
 <!-- Section 1 - Home -->
 <section id="home">
-  <div class="container">
+  <div class="home-container">
     <h1>Hello, I'm Laura!</h1>
   </div>
-  <div class="container">
+  <div class="home-container">
     <p>I'm a software developer with a background in architecture and design with knowledge of HTML, CSS & Javascript.</p>
     <p>I'm keenly interested in the intersection of coding with design, and have been discovering more about UX/UI design.</p>
   </div>
-  <div class="container">
-    <a href="#about-me" class="link-style">Learn more</a>
+  <div class="home-container">
+    <a href="#about" class="link-style">Learn more</a>
   </div>
 </section>
 
 <!-- Section 2 - About Section -->
 <section class="main" id="about">
-  <h2 id="about-me">About me</h2>
+  <h2>About me</h2>
   <div class="about-me-container">
     <div class="about-me-box">
       <h3><em>Who am I?</em></h3>
@@ -80,15 +80,35 @@
   </div>
 </section>
 
-<!-- Section 3 - Portfolio Image -->
-<section id="portfolio-hero">
-  <div class="container">
-    <h2>Portfolio</h2>
+<!-- Section 3 - Slideshow -->
+<section id="portfolio">
+  <h2>Portfolio</h2>
+<div class="container">
+    <div class="card-carousel">
+      <div class="card" id="1">
+        <div class="image-container"></div>
+        <p>1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p>
+      </div>
+      <div class="card" id="2">
+        <div class="image-container"></div>
+        <p>2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p>
+      </div>
+      <div class="card" id="3">
+        <div class="image-container"></div>
+        <p>3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p>
+      </div>  
+      <div class="card" id="4">
+        <div class="image-container"></div>
+        <p>4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p>
+      </div>
+      <div class="card" id="5">
+        <div class="image-container"></div>
+        <p>5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, explicabo!</p>
+      </div>
+    </div>
+    <a href="#" class="visuallyhidden card-controller">Carousel controller</a>
   </div>
 </section>
-
-<!-- Section 4 - Portfolio -->
-
 <!-- Footer -->
 <footer>
   <a href="#home" class="button"><i class="fa fa-arrow-up"></i> To the top</a>

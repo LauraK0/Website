@@ -1,10 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100&display=swap');
+
 :root {
-  --colour-one: #3bbA9c;
-  --colour-two: #2E3047;
-  --colour-three: #43455c;
-  --colour-four: #3c3f58;
-  --colour-five: #707793;
-  --background: #2e3047;
+  --colour-one: #98878F;/*cloud*/
+  --colour-two: #494E6B;/*storm*/
+  --colour-three: #985E6D;/*sunset*/
+  --colour-four: #4c6e81;/*sunset*/
+  --background:  #192231; /*grey*/
 
   --text-size: 12px;
   --h1-size: 48px;
@@ -15,28 +16,34 @@
  margin: 0;
  padding: 0;
  box-sizing: border-box;
- font-family: "Lato", sans-serif;
+ font-family: 'Roboto Flex', sans-serif;
  justify-content: center;
  text-align:center;
- color: var(--colour-one);
 }
 body, html {
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   line-height: 1.8;
   background-color: var(--background);
 }
 h1 {
   font-size: var(--h1-size);
-  color: white;
+  color: var(--colour-three);
 }
 h2{
+  position:relative;
   font-size: var(--h2-size);
-  margin-bottom: 2rem;
+  font-weight: 0px;
+  font-size: 60px;
   color: white;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 60px;
 }
 h3{
   font-size: var(--h3-size);
   margin: 0.5rem 2rem;
+  color: white;
 }
 p {
   margin-bottom: 1em;
@@ -52,9 +59,8 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background: var(--colour-three);
+  background: var(--colour-four);
   z-index: 100;
-  border-bottom: solid white 0.1em;
 }
 .navbar-container {
   display: flex;
@@ -79,17 +85,16 @@ header {
   color: white;
 }
 /*home container */
-#home {
+section {
   padding: 1rem 1rem;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.container {
+.home-container {
   position: relative;
   max-width: 600px;
-  width: 100%;
   margin: 1em;
   display: flex;
   flex-direction: column;
@@ -105,22 +110,137 @@ header {
   position: relative;
 }
 .link-style:hover{
-  background: var(--colour-one);
+  background: var(--colour-two);
 }
 /*about me */
-#about {
-  padding: 1rem 1rem;
-  max-height: 100vh;
-}
 .about-me-container {
+  margin:0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
 .about-me-box {
   text-align: justify;
-  padding: 15px;
-  background-color: var(--colour-three);
+  padding: 25px;
+  background-color: var(--colour-four);
   border-radius: 0.4rem;
   transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+#portfolio {
+  padding: 1rem 1rem;
+  min-height: 100vh;
+}
+
+/*slideshow */
+.visuallyhidden {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  opacity: 0; 
+}
+
+.container {
+  overflow: hidden;
+  padding: 20px;
+  margin-top: 2em;
+  background: rgba(0,0,0,.1)
+}
+
+.card-carousel {
+  --card-width: 80%;
+  --card-max-width: 280px;
+  --card-height: 350px;
+  --carousel-min-width: 600px;
+  z-index: 1;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: var(--card-height);
+  min-width: var(--carousel-min-width);
+  transition: filter .3s ease;
+}
+
+@media screen and (max-width: 640px) {
+  .card-carousel {
+    margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2)
+  }
+}
+
+.card-carousel.smooth-return {
+  transition: all .2s ease;
+}
+
+.card-carousel .card {
+  background: whitesmoke;
+  width: var(--card-width);
+  max-width: var(--card-max-width);
+  text-align: center;
+  padding: 1em;
+  min-width: 250px;
+  height: var(--card-height);
+  position: absolute;
+  margin: 0 auto;
+  color: rgba(0,0,0,.5);
+  transition: inherit;
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+  border-radius: 1em;
+  filter: brightness(.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card.highlight {
+  filter: brightness(1)
+}
+
+
+.card:nth-of-type(1) .image-container {
+    background-image: url("https://static.addtoany.com/images/dracaena-cinnabari.jpg");
+}
+ 
+.card:nth-of-type(2) .image-container {
+  background-image: url("https://www.w3schools.com/w3css/img_lights.jpg")
+}
+
+.card:nth-of-type(3) .image-container {
+  background-image: url("https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")
+}
+.card:nth-of-type(4) .image-container {
+  background-image: url("https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")
+}
+.card:nth-of-type(5) .image-container {
+  background-image: url("https://helpx.adobe.com/content/dam/help/en/stock/how-to/visual-reverse-image-search/jcr_content/main-pars/image/visual-reverse-image-search-v2_intro.jpg")
+}
+
+.image-container {
+  width: 8em;
+  height: 8em;
+  position: relative;
+  background-size: cover;
+  margin-bottom: 2em;
+  border-radius: 100%;
+  padding: 1em;
+  -webkit-box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.3);
+-moz-box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.3);
+box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.3);
+}
+
+.image-container::after {
+  content: "";
+  display: block;
+  width: 120%;
+  height: 120%;
+  border: solid 3px rgba(0,0,0,.1);
+  border-radius: 100%;
+  position: absolute;
+  top: calc(-10% - 3px);
+  left: calc(-10% - 3px);
+}
+
+h2 a {
+  color: #f5b916
 }
