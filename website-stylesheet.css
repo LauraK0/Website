@@ -78,7 +78,6 @@ header {
   width: 100%;
   height: 6rem;
   background-image: linear-gradient(to top, rgba(255,0,0,0), #98878F);
-  /* background-color: rgb(130,95,110); */
   z-index: 100;
   text-align:center;
 }
@@ -250,12 +249,11 @@ section {
 }
 .cont.s--inactive .el__preview-cont {
   opacity: 0;
-  transform: translateY(10px);
-  filter: blur(8px);
+  /* transform: translateY(10px); */
 }
 .cont.s--el-active .el__preview-cont {
   opacity: 0;
-  transform: translateY(30px);
+  /* transform: translateY(30px); */
   transition: all 0.5s;
 }
 .el__content {
@@ -312,10 +310,10 @@ section {
   left: 0;
   bottom: -80px;
   width: 100%;
-  height: 10%;
+  height: 195px;
   min-height: 195px;
   text-align: center;
-  font-size: 20vw;
+  font-size: 200px;
   line-height: 0.85;
   font-weight: bold;
   background-color: var(--colour-one);
@@ -349,7 +347,7 @@ section {
   position: relative;
   transform: translate3d(0, 100%, 0);
   transition: transform 0.5s 0.1s;
-  color: transparent;
+  color: white;
 }
 .el__index-overlay:before {
   content: attr(data-index);
@@ -381,7 +379,7 @@ section {
   transition-delay: 0s;
 }
 .el:nth-child(1) .el__bg {
-  transform: translate3d(0%, 0, 0);
+  transform: translate3d(-33.5%, 0, 0);
 }
 .el:nth-child(1) .el__bg:before {
   transition-delay: 0s;
@@ -401,7 +399,7 @@ section {
 }
 .el:nth-child(2) .el__bg {
   height: 100%;
-  /* transform: translate3d(-19.2%, 0, 0); */
+  transform: translate3d(-33.5%, 0, 0);
 }
 .el:nth-child(2) .el__bg:before {
   transition-delay: 0.1s;
@@ -439,7 +437,7 @@ section {
   transition-delay: 0.3s;
 }
 .el:nth-child(4) .el__bg {
-  transform: translate3d(-57.6%, 0, 0);
+  transform: translate3d(-33.5%, 0, 0);
 }
 .el:nth-child(4) .el__bg:before {
   transition-delay: 0.3s;
@@ -457,10 +455,10 @@ section {
 .el:nth-child(5) .el__inner {
   transition-delay: 0.4s;
 }
-.el:nth-child(5) .el__bg {
-  transform: translate3d(-76.8%, 0, 0);
+.el:nth-child(5) .el__bg { /*controls location of image in preview box*/
+  transform: translate3d(-33.5%, 0, 0);
 }
-.el:nth-child(5) .el__bg:before {
+.el:nth-child(5) .el__bg:before {  
   transition-delay: 0.4s;
   background-image: url("./images/comment-box.png");
 }
